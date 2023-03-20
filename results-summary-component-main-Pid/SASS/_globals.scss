@@ -1,0 +1,173 @@
+/* Font Family Hanken Grotesk */
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+$font-family: 'Hanken Grotesk', sans-serif;
+
+@mixin margin-icon() {
+    margin-right: .5rem;
+}
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-family;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container Styles */
+.container {
+    min-height: 400px;
+    min-width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 1.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.194);
+}
+
+/* First Section Styles */
+.sec-first {
+    height: 400px;
+    width: 50%;
+    padding: 2rem 0;
+    background: rgb(104,37,228);
+    background: linear-gradient(165deg, rgba(104,37,228,1) 37%, rgba(37,6,78,1) 99%, rgba(124,0,255,1) 100%, rgba(168,33,177,1) 100%);
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    .title {
+        color: hsl(221, 100%, 96%);
+    }
+
+    .circle {
+        background: rgb(37,6,78);
+        background: linear-gradient(165deg, rgba(37,6,78,1) 15%, rgba(104,37,228,1) 100%, rgba(124,0,255,1) 100%, rgba(168,33,177,1) 100%);
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: white;
+        display: grid;
+        gap: 0;
+        place-content: center;
+        place-items: center;
+
+        box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.369),
+                    -2px -2px 10px rgba(255, 255, 255, 0.369);
+
+        .number-mayus {
+            color: rgb(255, 255, 255);
+            font-size: 4rem;
+            font-weight: 800;
+        }
+
+        .number-minus {
+            color: rgba(255, 255, 255, 0.714);
+        }
+    }
+
+    .sub-title {
+        color: white;
+        font-weight: 700;
+    }
+
+    .description {
+        font-size: 15px;
+        color: rgba(255, 255, 255, 0.922);
+        width: 14rem;
+        text-align: center;
+    }
+}
+
+/* Second Section Styles */
+.sec-second {
+    width: 50%;
+    padding: 1.9rem;
+    display: flex;
+    flex-direction: column;
+
+    .container-grades {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: .8rem;
+        margin-top: 1rem;
+    }
+
+    i {
+        @include margin-icon()
+    }
+
+    .reaction {
+        background-color: rgba(255, 87, 87, 0.101);
+    }
+
+    .first {
+        color: hsl(0, 100%, 67%);
+        font-weight: 700;
+    }
+
+    .memory {
+        background-color: hsla(59, 100%, 50%, 0.303);
+    }
+
+    .second {
+        color: hsl(39, 100%, 56%);
+        font-weight: 700;
+    }
+
+    .verbal {
+        background-color: hsla(166, 100%, 37%, 0.154);
+    }
+
+    .third {
+        color: hsl(166, 100%, 37%);
+        font-weight: 700;
+    }
+
+    .visual {
+        background-color: hsla(234, 85%, 45%, 0.144);
+    }
+
+    .fourd {
+        color: hsl(234, 85%, 45%);
+        font-weight: 700;
+    }
+
+    .btn-second {
+        &:hover {
+            background: rgb(37,6,78);
+            background: linear-gradient(165deg, rgba(37,6,78,1) 15%, rgba(104,37,228,1) 100%, rgba(124,0,255,1) 100%, rgba(168,33,177,1) 100%);
+        }
+    }
+}
+
+/* Media Queries Mobile (max-width: 475px) */
+@media (max-width: 576px) {
+    .container {
+        min-width: 390px;
+        flex-direction: column;
+    }
+
+    .sec-first {
+        width: 100%;
+    }
+
+    .sec-second {
+        width: 100%;
+    }
+}
+
+

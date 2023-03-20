@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component / Pid</title>
+  <!-- CSS/SASS -->
+  <link rel="stylesheet" href="SASS/index.css">
+
+  <!-- Bootstrap ICONS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <!-- Container Section -->
+  <div class="container">
+
+    <!-- Firts Section -->
+    <section class="sec-first">
+      <h3 class="title">Your Result</h3>
+      <div class="circle">
+        <span class="number-mayus">76</span>
+        <span class="number-minus">of 100</span>
+      </div>
+      <h2 class="sub-title">Great</h2>
+      <p class="description">You scored higher than 65% of the people who have taken these tests.</p>
+    </section>
+
+    <!-- Second Section -->
+    <section class="sec-second">
+      <h2 class="title">Summary</h2>
+      <div class="container-grades">
+
+        <!-- Reaction Grade -->
+        <div class="grade reaction">
+          <span class="first"><i class="bi bi-lightning-charge"></i>Reaction</span>
+          <span><b>80</b> / 100</span>
+        </div>
+
+        <!-- Memory Grade -->
+        <div class="grade memory">
+          <span class="second"><i class="bi bi-server"></i>Memory</span>
+          <span><b>92</b> / 100</span>
+        </div>
+
+        <!-- Verbal Grade -->
+        <div class="grade verbal">
+          <span class="third"><i class="bi bi-chat-dots"></i>Verbal</span>
+          <span><b>61</b> / 100</span>
+        </div>
+
+        <!-- Visual Grade -->
+        <div class="grade visual">
+          <span class="fourd"><i class="bi bi-eye"></i>Visual</span>
+          <span><b>72</b> / 100</span>
+        </div>
+      </div>
+      <button class="btn-second">Continue</button>
+    </section>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Felipe Marin (Pid)</a>.
+  </div>
+</body>
+</html>
